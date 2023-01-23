@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -27,7 +29,7 @@ body {
 }
 
 
-#splash-headline > ul {
+#splash-headline>ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,7 +40,7 @@ body {
   margin-bottom: 0;
 }
 
-#splash-headline > ul > li > * {
+#splash-headline>ul>li>* {
   margin: 0;
 }
 
@@ -76,20 +78,18 @@ li {
   list-style: none;
 }
 
-
-/* banner */
 #banner {
   display: flex;
   justify-content: center;
   align-content: center;
-  background-color:#cc4c33;
+  background-color: #cc4c33;
   margin-left: -8px;
   width: 100vw;
   min-height: 200px;
 }
 
 
-#banner > ul{
+#banner>ul {
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -101,16 +101,16 @@ li {
   text-align: ceneter;
 }
 
-#banner > ul > li:first-child {
+#banner>ul>li:first-child {
   font-size: 30px;
   font-weight: lighter;
 }
 
-#banner > ul > li:nth-child(n + 2) {
+#banner>ul>li:nth-child(n + 2) {
   font-size: 45px;
 }
 
-#banner > ul > li:nth-child(n + 3){
+#banner>ul>li:nth-child(n + 3) {
   font-size: 25px;
   align-self: flex-end;
 }
@@ -119,42 +119,90 @@ li {
   #splash-red-triangle {
     width: 37.5px;
   }
+
   #splash-star {
     height: 100px;
   }
+
   #headline {
     font-size: 2em;
   }
+
   #headline-field {
     font-size: 1.5em;
 
     padding-bottom: 50px;
   }
+
   #headline-phone {
     font-size: 1.85em;
   }
+
   #headline-start-btn {
     margin-top: 20px !important;
   }
 
-  #banner > ul > li:first-child {
+  #banner>ul>li:first-child {
     font-size: 1em;
     font-weight: lighter;
   }
 
-  #banner > ul > li:nth-child(n + 2) {
+  #banner>ul>li:nth-child(n + 2) {
     font-size: 1.3em;
     margin: 5px 0;
   }
 
-  #banner > ul > li:nth-child(n + 3){
+  #banner>ul>li:nth-child(n + 3) {
     font-size: .8em;
     align-self: flex-end;
   }
 
-  #banner > ul{
+  #banner>ul {
     margin: 0 auto !important;
     width: 90%;
   }
 
+}
+
+
+/* PROJECTS */
+#projects {
+  width: 100vw;
+  min-height: 80vh !important;
+  margin-left: -8px;
+  margin-top: -8px;
+  background-image: url("./images/bigStar.png");
+  background-position: top;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-color: #243644;
+
+  display: flex;
+  justify-content: center;
+}
+
+
+#project-header {
+  background-color: gray;
+  height: fit-content;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#project-header > div {
+  /* flex: 0 0 33.333333%; */
+  flex: 1;
+}
+
+#project-title {
+  padding-right: 25px;
+  border-right: .5px solid white;
+}
+
+
+#project-header-details {
+  padding-left: 25px;
+  /* background-color: yellow; */
+  border-left: .5px solid white;
 }
