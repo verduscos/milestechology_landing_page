@@ -1,0 +1,39 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+
+#splash-main {
+  width: 100vw;
+  height: 80vh;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+
+  background-image: url("./images/constructBg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+#splash-headline > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+
+}
+
+#splash-star {
+  width: 200px;
+}
+
+li {
+  list-style: none;
+}
