@@ -4,18 +4,17 @@
   -moz-box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden !important;
+}
 
 #splash-main {
   width: 100vw;
-  height: 80vh;
-
-  position: absolute;
-  left: 0;
-  top: 0;
-
+  min-height: 80vh !important;
+  margin-left: -8px;
+  margin-top: -8px;
+  width: 100vw;
   text-align: center;
-
-
   background-image: url("./images/constructBg.jpg");
   background-position: center;
   background-size: cover;
@@ -36,6 +35,7 @@
   margin-top: 100px;
   padding: 0;
   color: white;
+  margin-bottom: 0;
 }
 
 #splash-headline > ul > li > * {
@@ -66,7 +66,7 @@
   border: solid 1px white;
   color: white;
   background-color: #243644;
-  margin-top: 50px !important;
+  margin-top: 10px !important;
   padding: 15px;
   width: 200px;
   cursor: pointer;
@@ -74,4 +74,87 @@
 
 li {
   list-style: none;
+}
+
+
+/* banner */
+#banner {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color:#cc4c33;
+  margin-left: -8px;
+  width: 100vw;
+  min-height: 200px;
+}
+
+
+#banner > ul{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  color: white;
+  margin: 0 auto;
+  text-align: ceneter;
+}
+
+#banner > ul > li:first-child {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+#banner > ul > li:nth-child(n + 2) {
+  font-size: 45px;
+}
+
+#banner > ul > li:nth-child(n + 3){
+  font-size: 25px;
+  align-self: flex-end;
+}
+
+@media only screen and (max-width: 1024px) {
+  #splash-red-triangle {
+    width: 37.5px;
+  }
+  #splash-star {
+    height: 100px;
+  }
+  #headline {
+    font-size: 2em;
+  }
+  #headline-field {
+    font-size: 1.5em;
+
+    padding-bottom: 50px;
+  }
+  #headline-phone {
+    font-size: 1.85em;
+  }
+  #headline-start-btn {
+    margin-top: 20px !important;
+  }
+
+  #banner > ul > li:first-child {
+    font-size: 1em;
+    font-weight: lighter;
+  }
+
+  #banner > ul > li:nth-child(n + 2) {
+    font-size: 1.3em;
+    margin: 5px 0;
+  }
+
+  #banner > ul > li:nth-child(n + 3){
+    font-size: .8em;
+    align-self: flex-end;
+  }
+
+  #banner > ul{
+    margin: 0 auto !important;
+    width: 90%;
+  }
+
 }
