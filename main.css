@@ -233,11 +233,11 @@ li {
 }
 
 @media only screen and (max-width: 1024px) {
-
+  #projects {
+    padding-bottom: 50px;
+  }
   #project-header {
     flex-direction: column;
-    /* background-color: gray; */
-    margin: 0 15px;
   }
   #projects {
     background-size: 80%;
@@ -262,4 +262,16 @@ li {
     font-size: 15px;
   }
 
+  #project-tiles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .project {
+    margin: 5px;
+    height:150px;
+    width: 150px;
+    object-fit: cover;
+  }
 }
