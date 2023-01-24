@@ -8,7 +8,7 @@
 
 body {
   overflow-x: hidden !important;
-  /* margin: 0 auto; */
+  background-color: #0f1418;
 }
 
 #social-btns {
@@ -72,7 +72,6 @@ body {
   width: 75px;
   margin: 0 auto;
 }
-
 
 #splash-headline>ul {
   display: flex;
@@ -443,7 +442,6 @@ li {
   margin-right: 5px;
 }
 
-
 @media only screen and (max-width: 1024px) {
   #owner {
     display: none;
@@ -601,7 +599,6 @@ textarea {
   font-weight: bolder;
 }
 
-
 @media only screen and (max-width: 1024px) {
   #contact {
     flex-direction: column;
@@ -631,5 +628,26 @@ textarea {
 
   #map-pin {
     display: none;
+  }
+}
+
+footer {
+  background-color: #0f1418;
+  color: rgb(185, 185, 185);
+  width: 100vw;
+  margin-left: -8px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  footer {
+    width: 95%;
+    margin: 0 auto;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
   }
 }
