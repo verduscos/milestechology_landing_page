@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *,
 *:before,
 *:after {
@@ -7,6 +9,8 @@
 }
 
 body {
+  /* closest font to what is used in the wireframe, but not the same */
+  font-family: 'Roboto', sans-serif;
   overflow-x: hidden !important;
   background-color: #0f1418;
 }
@@ -160,6 +164,9 @@ li {
 }
 
 @media only screen and (max-width: 1024px) {
+  #splash-main {
+    padding-bottom: 25px;
+  }
   #contact-icon {
     width: 35px;
   }
@@ -378,6 +385,7 @@ li {
   justify-content: space-between;
   align-items: center;
   width: 1000px;
+  padding-top: 25px;
 }
 
 .about-title {
@@ -399,7 +407,7 @@ li {
 
 .about-call {
   color: white;
-  font-size: 25px;
+  font-size: 15px;
   width: 200px !important;
   text-align: right;
 }
@@ -460,13 +468,6 @@ li {
     width: auto !important;
   }
 
-  .about-details {
-    border-top: .5px solid white;
-    border-left: none;
-    width: 95% !important;
-    padding-left: 0;
-  }
-
   #service {
     margin: 0;
     width: 95%;
@@ -478,6 +479,8 @@ li {
     text-align: center;
     padding: 25px 0;
     border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-bottom: 25px;
   }
 
   .about-call>span {
@@ -495,9 +498,9 @@ li {
     border-left: none;
     line-height: 30px;
     height: 300px;
-    padding-top: 25px;
+    padding-top: 0;
     width: 95% !important;
-    padding-left: 25px;
+    padding-left: 0;
     height: fit-content;
   }
 
@@ -509,6 +512,10 @@ li {
 
   .detail-lists>ul>li {
     list-style: disc;
+  }
+
+  #service-lists > ul {
+    padding: 0;
   }
 }
 
@@ -558,7 +565,7 @@ input,
 textarea {
   border: none;
   height: 45px;
-  width: 275px;
+  width: 260px;
   margin: 5px 0 5px 5px;
 }
 
@@ -621,7 +628,7 @@ textarea {
   }
 
   #contact-num {
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 50px;
     text-align: center;
   }
